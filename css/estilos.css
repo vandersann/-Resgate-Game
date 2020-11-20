@@ -1,4 +1,4 @@
-@font-face {
+font-face { /* indico qual fonte utilizar */
 	font-family:Titulo;
 	src:url(../fontes/ANODETONOONE.TTF);
 }
@@ -9,7 +9,7 @@ h1 {
 	color:#603A03;
 }
 
-body {
+body { /* imagem que vai ser utilizada de fundo */
 	background-image:url(../imgs/fundo.jpg);
 }
 
@@ -17,6 +17,7 @@ body {
 	width:950px;
 	height:auto;
 	position:relative;
+	margin-top: 150px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -69,49 +70,63 @@ background-image:url(../imgs/apache.png);
 }
 
 #inicio {
-	width:350px;
-	height:200px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width:320px;
+	height:210px;
 	background-color:#FFF;
  	margin-left:auto;
         margin-right:auto;
- 	margin-top:100px;
+ 	margin-top:90px;
 	text-align:center;
 	padding:10px;
-
+	border:none;
 }
-.anima1 {
+
+.texto{
+	margin-top: -10px;
+}
+
+.click{
+	cursor: pointer;
+}
+
+.anima1 { /* animação do jogo */
 	background-image:url(../imgs/helicoptero.png);
 	animation:play .5s steps(2) infinite;
 
-       -webkit-animation: play .5s steps(2) infinite;
-       -moz-animation: play .5s steps(2) infinite;
-       -ms-animation: play .5s steps(2) infinite;
-       -o-animation: play .5s steps(2) infinite;
+       -webkit-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Chrome */
+       -moz-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Mozilla */
+       -ms-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Explorer */
+       -o-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Opera */
+	
 }
+
 @keyframes play {
-	from {background-position:0px;}
-	to {background-position:-512px;}
+	from {background-position:0px;} /* posição inicial da animação */
+	to {background-position:-512px;} /* posição final da animação */
 }
+
 @-webkit-keyframes play {
-	from { background-position:0px; }
-	  to { background-position: -512px; }
- }
- 
- @-moz-keyframes play {
-	from { background-position:0px; }
-	  to { background-position: -512px; }
- }
- 
- @-ms-keyframes play {
-	from { background-position:0px; }
-	  to { background-position: -512px; }
- }
- 
- @-o-keyframes play {
-	from { background-position:0px; }
-	  to { background-position: -512px; }
- }
- .anima2 {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-o-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+.anima2 {
     background-image:url(../imgs/inimigo1.png);
     animation: play .5s steps(2) infinite;
     -webkit-animation: play .5s steps(2) infinite;
@@ -120,14 +135,13 @@ background-image:url(../imgs/apache.png);
     -o-animation: play .5s steps(2) infinite; 
 }
 
-
 .anima3 {
 	background-image:url(../imgs/amigo.png);
 	animation:play2 .9s steps(12) infinite;
 	-webkit-animation: play2 .9s steps(12) infinite;
-    -moz-animation: play2 .9s steps(12) infinite;
-    -ms-animation: play2 .9s steps(12) infinite;
-     -o-animation: play2 .9s steps(12) infinite;
+       -moz-animation: play2 .9s steps(12) infinite;
+        -ms-animation: play2 .9s steps(12) infinite;
+         -o-animation: play2 .9s steps(12) infinite;
 }
 
 @keyframes play2 {
@@ -153,4 +167,108 @@ background-image:url(../imgs/apache.png);
 @-o-keyframes play2 {
    from { background-position:    0px; }
      to { background-position: -528px; }
+}
+
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(../imgs/amigo_explosao.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+}
+
+#fim {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    	margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
 }
