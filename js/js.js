@@ -1,7 +1,6 @@
-function start() { // Inicio da função start()
+function start() { // Função start()
 
-	$("#inicio").hide(); //ocultar a div pelo comando 'hide'. E um comando JQuery
-    //será criada novas divs, apos o inicio.
+	$("#inicio").hide(); //hide para ocultar div 
     
 	$("#fundoGame").append("<div id='jogador' class='anima1'></div>"); 
 	$("#fundoGame").append("<div id='inimigo1' class='anima2'></div>");
@@ -10,7 +9,7 @@ function start() { // Inicio da função start()
     $("#fundoGame").append("<div id='placar'></div>");
     $("#fundoGame").append("<div id='energia'></div>");
     
-    //Principais variáveis do jogo
+    //Variáveis do jogo
 
     var podeAtirar=true;
     var fimdejogo=false;
@@ -23,9 +22,9 @@ function start() { // Inicio da função start()
     var posicaoY = parseInt(Math.random() * 334); // posição aleatória que o inimigo ira aparecer //
 
     var TECLA = {
-        W: 87, // movimenta o helicóptero para cima //
-        S: 83, // ,ovimenta o helicóptero para baixo //
-        D: 68 // realiza os disparos //
+        W: 87, // Cima //
+        S: 83, // Baixo //
+        D: 68 // realia Disparos //
     }
     
     jogo.pressionou = [];

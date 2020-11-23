@@ -1,4 +1,4 @@
-font-face { /* indico qual fonte utilizar */
+font-face { /* Inserir fonte no projeto */
 	font-family:Titulo;
 	src:url(../fontes/ANODETONOONE.TTF);
 }
@@ -9,7 +9,7 @@ h1 {
 	color:#603A03;
 }
 
-body { /* imagem que vai ser utilizada de fundo */
+body { /* Inserir imagem de fundo */
 	background-image:url(../imgs/fundo.jpg);
 }
 
@@ -70,12 +70,12 @@ background-image:url(../imgs/apache.png);
 }
 
 #inicio {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	width:320px;
 	height:210px;
 	background-color:#FFF;
  	margin-left:auto;
-        margin-right:auto;
+    margin-right:auto;
  	margin-top:90px;
 	text-align:center;
 	padding:10px;
@@ -90,20 +90,20 @@ background-image:url(../imgs/apache.png);
 	cursor: pointer;
 }
 
-.anima1 { /* animação do jogo */
+.anima1 { /* animações */
 	background-image:url(../imgs/helicoptero.png);
 	animation:play .5s steps(2) infinite;
-
-       -webkit-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Chrome */
-       -moz-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Mozilla */
-       -ms-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Explorer */
-       -o-animation: play .5s steps(2) infinite; /* prefixo que permite que o jogo funcione no Opera */
+        /*Compatibilidade de Browser*/
+       -webkit-animation: play .5s steps(2) infinite; /* Chrome */
+       -moz-animation: play .5s steps(2) infinite; /* Mozilla */
+       -ms-animation: play .5s steps(2) infinite; /* Explorer */
+       -o-animation: play .5s steps(2) infinite; /* Opera */
 	
 }
 
 @keyframes play {
-	from {background-position:0px;} /* posição inicial da animação */
-	to {background-position:-512px;} /* posição final da animação */
+	from {background-position:0px;} /* ponto inicial da animação */
+	to {background-position:-512px;} /* ponto final da animação */
 }
 
 @-webkit-keyframes play {
@@ -262,7 +262,7 @@ h3 {
 }
 
 #fim {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	width:350px;
 	height:200px;
 	background-color:#FFF;
