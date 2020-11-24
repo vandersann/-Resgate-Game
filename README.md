@@ -20,7 +20,7 @@ O projeto foi criado com o intuito de acessado via browser e forma simples.
 ![1.png](1.png)
 
 ### Andamento
-  !(resgate game.png)
+![2.png](2.png)
 
 ### Game Over
-  !(resgate game over.png)
+![3.png](3.png)
