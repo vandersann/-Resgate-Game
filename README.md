@@ -9,17 +9,17 @@ Disparo 💥.
 
 O projeto foi criado com o intuito de acessado via browser e forma simples.
 
-## Ferramentas utilizadas:
-HTML5
-CSS3
-JavaScript
-jQuery
+##🛠 Tecnologias:
+[HTML5]
+[CSS3]
+[JavaScript]
+[jQuery]
 
 ### Tela Inicial
-  ![Resgate inicial.png](Resgate inicial.png)
+  ![Resgate inicial.png]
 
 ### Andamento
-  ![Resgate Game.png](resgate game.png)
+  ![resgate game.png](resgate game.png)
 
 ### Game Over
-  ![Resgate Game Over.png](resgate game over.png)
+  ![resgate game over.png](resgate game over.png)
