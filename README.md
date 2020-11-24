@@ -17,7 +17,7 @@ O projeto foi criado com o intuito de acessado via browser e forma simples.
 * jQuery
 
 ### Tela Inicial
-![ texto](**Resgate **)
+![1.png](**1.png**)
 
 ### Andamento
   !(resgate game.png)
