@@ -16,10 +16,10 @@ O projeto foi criado com o intuito de acessado via browser e forma simples.
 [jQuery]
 
 ### Tela Inicial
-  ![Resgate inicial.png]
+  !(Resgate inicial.png)
 
 ### Andamento
-  ![resgate game.png](resgate game.png)
+  !(resgate game.png)
 
 ### Game Over
-  ![resgate game over.png](resgate game over.png)
+  !(resgate game over.png)
