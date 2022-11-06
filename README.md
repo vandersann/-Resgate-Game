@@ -7,6 +7,8 @@ Subir ⬆️,
 Descer ⬇️,
 Disparo 💥.
 
+https://game-regate91.netlify.app
+
 O projeto foi criado com o intuito de acessado via browser e forma simples.
 
 ## 🛠 Tecnologias:
